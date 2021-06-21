@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 1</title>
+    <script src="practice.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <style>
+        @font-face{
+            font-family:'digital-clock-font';
+            src: url('put_the_location_to_your_font.ttf or .otf');
+        }
+    </style>
 </head>
 <body>
+    <div id="date"></div>
+            The time is:         
+     <div id="time" style="font-family: 'Orbitron', sans-serif;"></div>
+    
     <div>
         <h3 id="greet"> Greet In Your Language </h3>
         <button data-text="Hello World!"> English </button>
@@ -16,17 +29,6 @@
     </div>
     
     
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', function(){
-        document.querySelectorAll('button').forEach(function(button) {
-            button.onclick = function() {
-                document.querySelector('h3').innerHTML = button.dataset.text
-            }
-        })
-    });
+</body>    
 
-    
-    
-</script>
 </html>
